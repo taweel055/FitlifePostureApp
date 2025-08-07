@@ -189,7 +189,7 @@ class CameraManager:
         # Optimized detection range for better performance (only 4 cameras detected)
         for index in range(4):
             try:
-                cap = cv2.VideoCapture(index, cv2.CAP_AVFOUNDATION)
+                cap = cv2.VideoCapture(index, cv2.CAP_V4L2)
                 if cap.isOpened():
                     # Apply Insta360 Link 2 optimization settings
                     self._apply_insta360_settings(cap)
