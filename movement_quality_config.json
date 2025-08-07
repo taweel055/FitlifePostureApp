@@ -1,0 +1,78 @@
+{
+  "scoring_weights": {
+    "rom": 0.4,
+    "quality": 0.4,
+    "symmetry": 0.2
+  },
+  "compensation_penalties": {
+    "trunk_lean": 2,
+    "knee_valgus": 2,
+    "excessive_sway": 3,
+    "forward_head_posture": 2,
+    "tight_iliopsoas": 1,
+    "asymmetric_squat": 2,
+    "unstable_balance": 3
+  },
+  "thresholds": {
+    "asymmetry_tolerance": 5,
+    "balance_time_target": 30,
+    "sway_tolerance": 2.0,
+    "red_flag_score": 5,
+    "excellent_score": 8,
+    "good_score": 6
+  },
+  "age_adjustments": {
+    "neck_rom_base": 67.54,
+    "neck_rom_decline": 0.5,
+    "hip_extension_base": 35,
+    "hip_extension_decline": 0.2,
+    "chest_horizontal_base": 45,
+    "chest_horizontal_decline": 0.15,
+    "hamstring_flex_base": 80,
+    "hamstring_flex_decline": 0.1
+  },
+  "clinical_interventions": {
+    "neck_rom_low": {
+      "intervention": "Deep-neck-flexor activation, ergonomic screen raise",
+      "exercises": ["Chin tucks", "Upper cervical flexion", "Postural awareness"],
+      "frequency": "3 times daily, 2x30s holds"
+    },
+    "hip_extension_restricted": {
+      "intervention": "Half-kneeling hip-flexor stretch",
+      "exercises": ["Hip flexor stretch", "Thomas stretch", "Couch stretch"],
+      "frequency": "2x30s daily, progress to 3x45s"
+    },
+    "squat_valgus": {
+      "intervention": "Corrective funnel: ankle dorsiflex → hip hinge → core bracing",
+      "exercises": ["Clamshells", "Band walks", "Goblet squats"],
+      "frequency": "3x15 reps, 3 times weekly"
+    },
+    "balance_deficit": {
+      "intervention": "Single-leg stance on foam, eyes-closed progression",
+      "exercises": ["Single leg stands", "BOSU balance", "Proprioceptive training"],
+      "frequency": "30s holds, progress to 60s, daily"
+    }
+  },
+  "feedback_messages": {
+    "neck_rom_low": {
+      "en": "Extend neck range - look up and down slowly",
+      "ar": "إرجع لورا شوي، إعمل إطالة للجهة اليمين"
+    },
+    "squat_valgus": {
+      "en": "Drive knees out—imagine ripping the floor apart",
+      "ar": "ادفع الركب للخارج - تخيل إنك بتمزق الأرض"
+    },
+    "balance_sway": {
+      "en": "Fix your gaze on a static point and engage core",
+      "ar": "ثبت نظرك على نقطة ثابتة وشد عضلات البطن"
+    },
+    "hip_tight": {
+      "en": "Hip flexors tight - stretch after prolonged sitting",
+      "ar": "عضلات الورك مشدودة - اعمل إطالة بعد الجلوس الطويل"
+    },
+    "excellent_form": {
+      "en": "Excellent movement quality - maintain this pattern",
+      "ar": "جودة حركة ممتازة - حافظ على هذا النمط"
+    }
+  }
+}
